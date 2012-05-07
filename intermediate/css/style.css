@@ -4236,11 +4236,16 @@ p.subhead span {
 	line-height: 1.5;
 	font-family: 'TradeGothicW01-LightObl';
 }
+p.about span {
+	font-size: 1.15em;
+	line-height: 1.5;
+	font-family: 'TradeGothicW01-LightObl';
+}
 
 p.about {
 	font-size: 1.4em;
 	line-height: 1.5;
-	font-family: georgia, palatino, times, serif;
+	font-family: 'Trade Gothic W01 light';
 }
 
 a.inactive {
