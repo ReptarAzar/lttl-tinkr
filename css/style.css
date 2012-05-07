@@ -5095,7 +5095,7 @@ div.intro h1 {
 p.subhead, p.about {
 	font-size: .9em;
 	line-height: 1.5;
-	font-family: georgia, palatino, times, serif;
+
 }
 }
 
@@ -5109,7 +5109,7 @@ div.intro h1 {
 p.subhead, p.about {
 	font-size: 1em;
 	line-height: 1.5;
-	font-family: georgia, palatino, times, serif;
+
 }
 }
 
@@ -5123,7 +5123,7 @@ div.intro h1 {
 p.subhead, p.about {
 	font-size: 1.25em;
 	line-height: 1.5;
-	font-family: georgia, palatino, times, serif;
+
 }
 
 
@@ -5149,7 +5149,7 @@ div.intro img.bro {
 p.subhead, p.about {
 	font-size: 1.3em;
 	line-height: 1.5;
-	font-family: georgia, palatino, times, serif;
+
 }
 #projects h2 {
 	margin-bottom: 0;
@@ -5188,7 +5188,7 @@ p.subhead, p.about {
 	p.subhead {
 		font-size: 1em;
 		line-height: 1.5;
-		font-family: georgia, palatino, times, serif;
+
 	}
 	div.intro img.bro {
 		width: 375px;
