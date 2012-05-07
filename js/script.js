@@ -1,7 +1,3 @@
-// $(document).ready(function() {
-// $("#heading").bind("load", function () { $(this).fadeIn(); 
-// });
-
 
 $("#projects-link").click(function () {
   $(this).addClass("active");
@@ -68,41 +64,101 @@ $(document).ready(function() {
 
 });
 
-////type replacement
 
-;(function(window,document,undefined){mti={};mti.L=function(a,b){var c=arguments.length>2?Array.prototype.slice.call(arguments,2):[];return function(){c.push.apply(c,arguments);return b.apply(a,c)}};mti.g=function(a,b){this.j=a;this.b=b};mti.g.prototype.createElement=function(a,b,c){a=this.j.createElement(a);if(b)for(var d in b)if(b.hasOwnProperty(d))if(d=="style"&&this.b.getName()=="MSIE")a.style.cssText=b[d];else a.setAttribute(d,b[d]);c&&a.appendChild(this.j.createTextNode(c));return a};function k(a,b,c){a=a.j.getElementsByTagName(b)[0];if(!a)a=document.documentElement;if(a&&a.lastChild){a.insertBefore(c,a.lastChild);return true}return false}
-function r(a,b){function c(){document.body?b():setTimeout(c,0)}c()}mti.g.v=false;
-function s(a,b){if(mti.g.v===true)b();else if(a.b.getName()=="MSIE"){var c=a.j,d=false,e=function(){if(!d){d=true;b();mti.g.v=true}};(function(){try{c.documentElement.doScroll("left")}catch(f){setTimeout(arguments.callee,50);return}e()})();c.onreadystatechange=function(){if(c.readyState=="complete"){c.onreadystatechange=null;e()}}}else if(a.b.ra=="AppleWebKit"&&a.b.qa<525)(function(){if(["loaded","complete"].indexOf(this.j.readyState)>-1){b();mti.g.v=true}else setTimeout(arguments.callee,50)})();
-else if(a.j.addEventListener)a.j.addEventListener("DOMContentLoaded",function(){b();mti.g.v=true},false);else window.onload=function(){b();mti.g.v=true}}function t(a,b){if(b.parentNode){b.parentNode.removeChild(b);return true}return false}function u(a,b,c){a=b.className.split(/\s+/);for(var d=0,e=a.length;d<e;d++)if(a[d]==c)return;a.push(c);b.className=a.join(" ").replace(/^\s+/,"")}
-function v(a,b,c){a=b.className.split(/\s+/);for(var d=[],e=0,f=a.length;e<f;e++)a[e]!=c&&d.push(a[e]);b.className=d.join(" ").replace(/^\s+/,"").replace(/\s+$/,"")}function x(a,b){if(typeof b!="undefined")if(b!=null)return typeof b.currentStyle!="undefined"?b.currentStyle.fontFamily:a.j.defaultView.getComputedStyle(b,null).getPropertyValue("font-family");return""}
-function y(a,b){var c="";b=b.childNodes||b;for(var d=0;d<b.length;d++)c+=b[d].nodeType!=1?b[d].nodeValue:y(a,b[d].childNodes);return c}mti.g.prototype.getElementById=function(a){return this.j.getElementById(a)};
-mti.g.prototype.R=function(a,b,c){newFamilyVal=[];currFamily=a.style.fontFamily;currFamilyVal=currFamily.split(",");for(i=0;i<c.length;i++)c[i]!=""&&newFamilyVal.push(c[i]);for(j=0;j<currFamilyVal.length;j++)currFamilyVal[j]!=""&&newFamilyVal.push(currFamilyVal[j]);a.style.fontFamily=""+newFamilyVal;return a.style.fontFamily};mti.l=function(a,b,c,d,e,f){this.ya=a;this.Da=b;this.ra=c;this.qa=d;this.Aa=e;this.ga=f};mti.l.prototype.getName=function(){return this.ya};mti.e=function(a){this.b=a};mti.e.f="Unknown";mti.e.na=new mti.l(mti.e.f,mti.e.f,mti.e.f,false);mti.e.prototype.parse=function(){return this.b.indexOf("MSIE")!=-1?A(this):this.b.indexOf("Opera")!=-1?B(this):this.b.indexOf("AppleWebKit")!=-1?C(this):this.b.indexOf("Gecko")!=-1?D(this):mti.e.na};function E(a){var b=F(a,a.b,/(iPod|iPad|iPhone|Android)/);if(b!="")return b;a=F(a,a.b,/(Linux|Mac_PowerPC|Macintosh|Windows)/);if(a!=""){if(a=="Mac_PowerPC")a="Macintosh";return a}return mti.e.f}
-function A(a){var b=F(a,a.b,/(MSIE [\d\w\.]+)/);if(b!=""){var c=b.split(" ");b=c[0];c=c[1];return new mti.l(b,c,b,c,E(a),I(a,c)>=6)}return new mti.l("MSIE",mti.e.f,"MSIE",mti.e.f,E(a),false)}
-function B(a){var b=mti.e.f,c=mti.e.f,d=F(a,a.b,/(Presto\/[\d\w\.]+)/);if(d!=""){c=d.split("/");b=c[0];c=c[1]}else{if(a.b.indexOf("Gecko")!=-1)b="Gecko";d=F(a,a.b,/rv:([^\)]+)/);if(d!="")c=d}if(a.b.indexOf("Version/")!=-1){d=F(a,a.b,/Version\/([\d\.]+)/);if(d!="")return new mti.l("Opera",d,b,c,E(a),I(a,d)>=10)}d=F(a,a.b,/Opera[\/ ]([\d\.]+)/);if(d!="")return new mti.l("Opera",d,b,c,E(a),I(a,d)>=10);return new mti.l("Opera",mti.e.f,b,c,E(a),false)}
-function C(a){var b=E(a),c=F(a,a.b,/AppleWebKit\/([\d\.\+]+)/);if(c=="")c=mti.e.f;var d=mti.e.f;if(a.b.indexOf("Chrome")!=-1)d="Chrome";else if(a.b.indexOf("Safari")!=-1)d="Safari";var e=mti.e.f;if(a.b.indexOf("Version/")!=-1)e=F(a,a.b,/Version\/([\d\.\w]+)/);else if(d=="Chrome")e=F(a,a.b,/Chrome\/([\d\.]+)/);var f=F(a,c,/\d+\.(\d+)/);return new mti.l(d,e,"AppleWebKit",c,b,I(a,c)>=526||I(a,c)>=525&&parseInt(f)>=13)}
-function D(a){var b=mti.e.f,c=mti.e.f,d=false;if(a.b.indexOf("Firefox")!=-1){b="Firefox";var e=F(a,a.b,/Firefox\/([\d\w\.]+)/);if(e!=""){d=F(a,e,/\d+\.(\d+)/);c=e;d=e!=""&&I(a,e)>=3&&parseInt(d)>=5}}else if(a.b.indexOf("Mozilla")!=-1)b="Mozilla";e=F(a,a.b,/rv:([^\)]+)/);if(e=="")e=mti.e.f;else if(!d){d=I(a,e);var f=parseInt(F(a,e,/\d+\.(\d+)/)),g=parseInt(F(a,e,/\d+\.\d+\.(\d+)/));d=d>1||d==1&&f>9||d==1&&f==9&&g>=2||e.match(/1\.9\.1b[123]/)!=null||e.match(/1\.9\.1\.[\d\.]+/)!=null}return new mti.l(b,
-c,"Gecko",e,E(a),d)}function I(a,b){a=F(a,b,/(\d+)/);if(a!="")return parseInt(a);return-1}function F(a,b,c){if((a=b.match(c))&&a[1])return a[1];return""};mti.c=function(a,b,c,d){this.a=a;this.h=b;this.Y=c;this.o=d||mti.c.C;this.n=new mti.B("-")};mti.c.C="mti";mti.c.q="loading";mti.c.A="active";mti.c.D="inactive";mti.c.K="font";function J(a){u(a.a,a.h,a.n.m(a.o,mti.c.q));K(a,mti.c.q)}function L(a,b,c){v(a.a,a.h,a.n.m(a.o,b,c,mti.c.q));u(a.a,a.h,a.n.m(a.o,b,c,mti.c.A));K(a,mti.c.K+mti.c.A,b,c)}function M(a){u(a.a,a.h,a.n.m(a.o,mti.c.D));K(a,mti.c.D)}function N(a){v(a.a,a.h,a.n.m(a.o,mti.c.q));u(a.a,a.h,a.n.m(a.o,mti.c.A));K(a,mti.c.A)}
-function K(a,b,c,d){a.Y[b]&&a.Y[b](c,d)};mti.ja=function(){this.da={}};function O(a,b){var c=[];for(var d in b)if(b.hasOwnProperty(d)){var e=a.da[d];e&&c.push(e(b[d]))}return c};mti.p=function(a,b,c,d,e){this.a=a;this.s=b;this.M=c;this.H=d;this.ba=e;this.Z=0;this.S=this.ca=false;this.xa=new mti.U;this.ta=new mti.k};mti.p.V="_,arial,helvetica";mti.p.ia="n4";
-mti.p.prototype.watch=function(a,b,c){for(var d=a.length,e=0;e<d;e++){var f=a[e];b[f]||(b[f]=[mti.p.ia]);this.Z+=b[f].length}if(c)this.ca=c;for(e=0;e<d;e++){f=a[e];c=b[f];for(var g=0,h=c.length;g<h;g++){var o=c[g],l=R(this,mti.p.V,o),q=this.M.O(l);t(this.a,l);l=f;var m=this.s;u(m.a,m.h,m.n.m(m.o,l,o,mti.c.q));K(m,mti.c.K+mti.c.q,l,o);m=R(this,this.xa.quote(l),o);if(q!=this.M.O(m)){t(this.a,m);L(this.s,l,o);this.S=true;S(this)}else T(this,this.ba(),q,m,l,o)}}};
-function S(a){if(--a.Z==0&&a.ca)a.S?N(a.s):M(a.s)}mti.p.prototype.pa=function(a,b,c,d,e){if(b!=this.M.O(c)){t(this.a,c);L(this.s,d,e);this.S=true;S(this)}else if(this.ba()-a<5E3)T(this,a,b,c,d,e);else{t(this.a,c);a=this.s;v(a.a,a.h,a.n.m(a.o,d,e,mti.c.q));u(a.a,a.h,a.n.m(a.o,d,e,mti.c.D));K(a,mti.c.K+mti.c.D,d,e);S(this)}};function T(a,b,c,d,e,f){a.H(function(g,h){return function(){h.call(g,b,c,d,e,f)}}(a,a.pa),50)}
-function R(a,b,c){c=a.ta.expand(c);b=a.a.createElement("span",{style:"position:absolute;top:-999px;font-size:300px;font-family:"+b+","+mti.p.V+";"+c},"Mm");k(a.a,"body",b);return b};mti.u=function(a,b,c,d,e){this.a=a;this.aa=b;this.h=c;this.H=d;this.b=e;this.P=this.Q=0};mti.u.prototype.X=function(a,b){this.aa.da[a]=b};mti.u.prototype.load=function(a){var b=new mti.c(this.a,this.h,a);this.b.ga?U(this,b,a):M(b)};mti.u.prototype.va=function(a,b,c,d){if(d)a.load(mti.L(this,this.za,b,c));else{a=--this.Q==0;this.P--;if(a)this.P==0?M(b):J(b);c.watch([],{},a)}};
-mti.u.prototype.za=function(a,b,c,d){var e=--this.Q==0;e&&J(a);this.H(mti.L(this,function(f,g,h,o){setTimeout(function(){f.watch(g,h||{},o)},100)},b,c,d,e))};function U(a,b,c){c=O(a.aa,c);a.P=a.Q=c.length;for(var d=new mti.p(a.a,b,{O:function(h){return h.offsetWidth}},a.H,function(){return(new Date).getTime()}),e=0,f=c.length;e<f;e++){var g=c[e];aa(g,a.b,mti.L(a,a.va,g,b,d))}};mti.B=function(a){this.wa=a||mti.B.ha};mti.B.ha="-";mti.B.prototype.m=function(){for(var a=[],b=0;b<arguments.length;b++)a.push(arguments[b].replace(/[\W_]+/g,"").toLowerCase());return a.join(this.wa)};mti.U=function(){this.fa='"'};mti.U.prototype.quote=function(a){var b=[];a=a.split(/,\s*/);for(var c=0;c<a.length;c++){var d=a[c].replace(/['"]/g,"");d.indexOf(" ")==-1?b.push(d):b.push(this.fa+d+this.fa)}return b.join(",")};mti.k=function(){this.ea=mti.k.ma;this.z=mti.k.oa};mti.k.ma=["font-style","font-weight"];mti.k.oa={"font-style":[["n","normal"]],"font-weight":[["4","normal"]]};mti.k.W=function(a,b,c){this.ua=a;this.Ca=b;this.z=c};mti.k.W.prototype.expand=function(a,b){for(var c=0;c<this.z.length;c++)if(b==this.z[c][0]){a[this.ua]=this.Ca+":"+this.z[c][1];return}};
-mti.k.prototype.expand=function(a){if(a.length!=2)return null;for(var b=[null,null],c=0,d=this.ea.length;c<d;c++){var e=this.ea[c],f=a.substr(c,1);(new mti.k.W(c,e,this.z[e])).expand(b,f)}return b[0]&&b[1]?b.join(";")+";":null};window.MonoTypeWebFonts=function(){var a=(new mti.e(navigator.userAgent)).parse();return new mti.u(new mti.g(document,a),new mti.ja,document.documentElement,function(b,c){setTimeout(b,c)},a)}();window.MonoTypeWebFonts.load=window.MonoTypeWebFonts.load;window.MonoTypeWebFonts.addModule=window.MonoTypeWebFonts.X;mti.G=function(a,b,c){this.t=a;this.a=b;this.Ba=c;this.r={};this.I=[]};mti.G.prototype.indexOf=function(a,b){if(a.indexOf)return a.indexOf(b);else{for(var c=0;c<a.length;c++)if(a[c]==b)return c;return-1}};
-function V(a,b){var c=a.Ba,d=x(a.a,b);d=(d||"").replace(/^\s|\s$/g,"").replace(/'|"/g,"").replace(/,\s*/g,"|");if(d!=""){d=new RegExp(d,"ig");for(i=0;i<c.length;i++){var e=c[i],f=e.fontfamily;if(d.test(f.replace(/^\s|\s$/g,""))){var g;if(b)g=typeof b.currentStyle!="undefined"?b.currentStyle.visibility:a.a.j.defaultView.getComputedStyle(b,null).getPropertyValue("visibility");if(g!="hidden")b.style.visibility="hidden";a.I.push(b);if(e.enableSubsetting)if(a.r[f.replace(/^\s|\s$/g,"")])a.r[f.replace(/^\s|\s$/g,
-"")]+=y(a.a,b);else a.r[f.replace(/^\s|\s$/g,"")]=y(a.a,b)}}}}
-function W(a){var b="img,select,option,script,noscript,iframe,object,style,param,embed,link,meta,head,title,br,hr".split(","),c=a.t,d=null;do{d=c.firstChild;if(d==null){c.nodeType==1&&a.indexOf(b,c.tagName.toLowerCase())<0&&V(a,c);d=c.nextSibling}if(d==null){c=c;do{d=c.parentNode;if(d==a.t)break;d.nodeType==1&&a.indexOf(b,d.tagName.toLowerCase())<0&&V(a,d);c=d;d=d.nextSibling}while(d==null)}c=d}while(c!=a.t);b=false;for(p in a.r){b=true;break}if(b)return a.r;return null}
-mti.G.prototype.R=function(a,b){var c="img,select,option,script,noscript,iframe,object,style,param,embed,link,meta,head,title,br,hr".split(","),d=this.t,e=null;do{e=d.firstChild;if(e==null){d.nodeType==1&&this.indexOf(c,d.tagName.toLowerCase())<0&&V(this,d);e=d.nextSibling}if(e==null){d=d;do{e=d.parentNode;if(e==this.t)break;e.nodeType==1&&this.indexOf(c,e.tagName.toLowerCase())<0&&x(this.a,e).indexOf(a)>-1&&this.a.R(e,a,b);d=e;e=e.nextSibling}while(e==null)}d=e}while(d!=this.t);a=false;for(p in this.r){a=
-true;break}if(a)return this.r;return null};mti.i=function(a,b,c,d){this.J=a;this.b=b;this.a=c;this.d=d;this.$=[];this.sa={}};mti.i.la="monotype";var X="TTF";
-function aa(a,b,c){X=ba(a);var d=a.d.projectId;if(d){a.J["__mti_fntLst"+d]=function(){return a.d.pfL};a.J.mti_element_cache=[];Y(a);if(a.d.reqSub){d=function(){var f=new mti.G(document.body,a.a,a.d.pfL),g=W(f);for(fontfamily in g)g[fontfamily]=ca(a,g[fontfamily]);a.J.mti_element_cache=f.I;Z(a,g);f=f.I;for(g=0;g<f.length;g++)for(fontFamily in a.N)x(a.a,f[g]).indexOf(fontFamily)>-1&&a.a.R(f[g],fontFamily,a.N[fontFamily])};var e=window.MTIConfig||{isAsync:false};if(e.isAsync===true)e.onReady=d;else s(a.a,
-d)}else{Z(a);r(a.a,function(){var f=new mti.G(document.body,a.a,a.d.pfL);W(f);a.J.mti_element_cache=f.I})}c(b.ga)}else c(true)}function ba(a){var b=a.d.ffArray,c=a.b.getName();c=c.toLowerCase();if(c=="firefox")c="mozilla";if(/ipad|ipod|iphone/.test(a.b.Aa.toLowerCase()))c="msafari";a=a.b.Da;b=b[c];c="";for(p in b)if(parseFloat(a)>=parseFloat(p))c=b[p];return c}mti.i.F=300;mti.i.prototype.N={};
-function Z(a,b){var c=a.d.projectId,d=a.d.ec,e=a.d.fcURL,f=a.d.dfcURL,g=a.a.createElement("style",{type:"text/css",id:"mti_fontface_"+a.d.projectId});k(a.a,"head",g);var h="",o=false,l={},q={TTF:"truetype",WOFF:"woff",SVG:"svg"},m=X!=null&&X.toUpperCase()=="EOT";for(i=0;i<a.d.pfL.length;i++){var w=a.d.pfL[i],n=w.fontfamily,G=w.contentIds;a.$.push(n);if(b&&b[n]&&b[n].length>mti.i.F){o=true;l[n]||(l[n]=[]);var P=b[n],H=(P.length-1)/mti.i.F+1;H=Math.floor(H);for(var Q=[],z=1;z<=H;z++){newFontFamily=
-n+""+z;l[n].push(newFontFamily);b[newFontFamily]=P.substr((z-1)*mti.i.F,mti.i.F);h+="@font-face{font-family:'"+newFontFamily+"';src:url('"+$(a,G,c,w.enableSubsetting,d,e,f,a.d.ck,newFontFamily,b)+"')";m||(h+=" format('"+q[X.toUpperCase()]+"')");h+=";}\n";Q.push("'"+newFontFamily+"'")}a.N[n]=Q}else{h+="@font-face{font-family:'"+n+"';src:url('"+$(a,G,c,w.enableSubsetting,d,e,f,a.d.ck,n,b)+"')";if(!m){w=G[X.toUpperCase()];n=q[X.toUpperCase()];w||(n=q.TTF);h+=" format('"+n+"')"}h+=";}\n"}}if(o===true){t(a.a,
-a.a.getElementById("mti_stylesheet_"+a.d.projectId)||{});Y(a,l)}if(g.styleSheet)g.styleSheet.cssText=h;else{a=document.createTextNode(h);g.appendChild(a)}}
-function Y(a,b){var c=a.a.createElement("style",{type:"text/css",id:"mti_stylesheet_"+a.d.projectId});k(a.a,"head",c);var d="";for(i in a.d.selectorFontMap){var e=a.d.selectorFontMap[i];if(b&&b[e]&&b[e].length>0)e=b[e].join("','");d+=i+"{font-family:'"+e+"';}\n";d+="/*fout specific code:*/\n";d+="."+mti.c.C+"-loading "+i+"{visibility:hidden;}\n";d+="."+mti.c.C+"-active "+i+", ."+mti.c.C+"-inactive "+i+"{visibility: visible;}\n"}if(c.styleSheet)c.styleSheet.cssText=d;else{a=document.createTextNode(d);
-c.appendChild(a)}}function ca(a,b){if(b&&typeof b=="string"){b=b.replace(/\s/g,"").replace(/\n/g,"").replace(/\r/g,"");a="";for(var c=b.length,d=null,e=0;e<c;e++){d=b.charAt(e);if(a.indexOf(d)==-1)a+=d}return a}return""}
-function $(a,b,c,d,e,f,g,h,o,l){var q=b[X.toUpperCase()],m="http://";if(window.location.protocol=="https:")m="https://";f=f.replace("http://","").replace("https://","");g=g.replace("http://","").replace("https://","");f=m+f;g=m+g;if(d){url=g+"?";if(e)url+=h+"&";url+="fctypeId="+a.d.fctypeArray[X]+"&fcId="+b.TTF+"&origId="+q}else url=e?q?f+q+"."+X.toLowerCase()+"?"+h:f+b.TTF+".ttf?"+h:f+"?fctypeId="+a.d.fctypeArray[X]+"&fcId="+q;url+="&projectId="+c;if(l)url+="&content="+escape((l[o]||"")+"giMm");
-if(X!=null&&X.toUpperCase()=="SVG")url+="#"+q;return url}mti.i.prototype.load=function(a){a(this.$,this.sa)};mti.ka=function(a){this.w=a};mti.ka.prototype.protocol=function(){var a=["http:","https:"],b=a[0];if(this.w&&this.w.location&&this.w.location.protocol){var c=0;for(c=0;c<a.length;c++)if(this.w.location.protocol==a[c])return this.w.location.protocol}return b};mti.T=function(a,b){this.a=a;this.d=b};
-mti.T.prototype.appendBannerScript=function(){var a;a=new RegExp(escape("WFS_MTI_SS")+"=([^;]+)");if(a.test(document.cookie+";")){a.exec(document.cookie+";");a=unescape(RegExp.$1)}else a=false;var b=this.d.bannerHandlerURL;if(b){b+="?projectId="+this.d.projectId;if(a!==false)b+="&WFS_MTI_SS="+a;b+="&"+escape((new Date).getTime());k(this.a,"head",this.a.createElement("Script",{type:"text/javascript",src:b}))}};
-MonoTypeWebFonts.X(mti.i.la,function(a){var b=(new mti.e(navigator.userAgent)).parse(),c=new mti.g(document,b);window.MonoTypeWebFonts.BannerHandler=new mti.T(c,a);return new mti.i(window,b,c,a)});})(this,document);
-if(window.addEventListener){  window.addEventListener('load', function(){MonoTypeWebFonts.cleanup(); MonoTypeWebFonts.loadColo();}, false);}else if(window.attachEvent){  window.attachEvent('onload', function(){MonoTypeWebFonts.cleanup(); MonoTypeWebFonts.loadColo();});}MonoTypeWebFonts.cleanupExecuted = false;MonoTypeWebFonts.cleanup = function(){if(MonoTypeWebFonts.cleanupExecuted === true){ return; }MonoTypeWebFonts.cleanupExecuted = (window['mti_element_cache'].length > 0);for(i = 0; i < window['mti_element_cache'].length; i++){window['mti_element_cache'][i].style.visibility = "";}var className = document.documentElement.className;className = className.replace(/\b(mti\-.*?(loading|active|inactive))\b/g,'').replace(/^\s+|\s+$/g,'').replace(/\s+/g,' ');setTimeout(function(){document.documentElement.className = className+' mti-repaint';},20);/*IE sometimes requires redrawing the browser after fonts are downloaded. Adding a classname might help*/if(!document.getElementById('MonoTypeFontApiFontTracker')){  var fontTrackingUrl = "http://fast.fonts.com/t/1.css";  if(window.location.protocol == 'https:'){    fontTrackingUrl = fontTrackingUrl.replace(/http:/,'https:');  }  var head = document.getElementsByTagName('HEAD')[0];  var cssEle = document.createElement('LINK');  if(cssEle){      cssEle.setAttribute('id','MonoTypeFontApiFontTracker');      cssEle.setAttribute('type','text/css');      cssEle.setAttribute('rel','stylesheet');      cssEle.setAttribute('href',fontTrackingUrl + "?apiType=css&projectid=d1e465a3-2306-4fbc-acf9-9856eb2362bd");      head.appendChild(cssEle);  }}window['mti_element_cache'] = [];};MonoTypeWebFonts._fontActiveEventList = [];MonoTypeWebFonts._fontLoadingEventList = [];MonoTypeWebFonts._activeEventList = [];MonoTypeWebFonts._inActiveEventList = [];MonoTypeWebFonts.addEvent = function(eventName, callbackFunction){   if(eventName.toLowerCase() == 'fontactive'){      MonoTypeWebFonts._fontActiveEventList.push(callbackFunction);  }else if(eventName.toLowerCase() == 'fontloading'){      MonoTypeWebFonts._fontLoadingEventList.push(callbackFunction);  }else if(eventName.toLowerCase() == 'inactive'){      MonoTypeWebFonts._inActiveEventList.push(callbackFunction);  }else if(eventName.toLowerCase() == 'active'){      MonoTypeWebFonts._activeEventList.push(callbackFunction);  }};MonoTypeWebFonts.loadFonts = function(){MonoTypeWebFonts.load({monotype:{ reqSub:false,pfL:[{'fontfamily' : "Trade Gothic W01 Bold" ,contentIds :{EOT: '2e9af08f-0faf-45e3-9767-78a700434af3',WOFF: 'f51d24dd-8256-43c6-ba1a-6aeae9d3f262',TTF: '955ee494-66b2-4eb2-8f19-bc3a088df16d',SVG: 'd5153ad4-7c93-4757-9147-640e69ec4801'}, enableSubsetting : false},{'fontfamily' : "TradeGothicW01-BoldCn20 675334" ,contentIds :{EOT: '257c802f-349c-4b4d-aefa-546d5de15ec6',WOFF: '5fdc935e-9e30-442a-bbe9-8d887b858471',TTF: '616c4c87-a077-43f4-a9f4-f01267c13818',SVG: 'c901ad5f-a842-4549-a1f4-583a97f7e169'}, enableSubsetting : false},{'fontfamily' : "Trade Gothic W01 Bold 2" ,contentIds :{EOT: 'bb3aa0a7-2585-4e89-ad82-658fd561751a',WOFF: '1454a71d-cdbb-429c-8092-122f4493e0c7',TTF: 'd5ea405c-2180-4ff0-bd51-3e19fb280be4',SVG: '70ac6679-cf48-4a0e-a909-d1e3bb4a1aa9'}, enableSubsetting : false},{'fontfamily' : "TradeGothicW01-Bold2Obl" ,contentIds :{EOT: '363fd092-cd55-4bd1-bdc5-cfc9a7057517',WOFF: '25f577c3-f32b-4fbf-b684-3e7c1a76d1ea',TTF: '2ed49e17-92ad-4026-9ae6-d20f88f21840',SVG: '969cd675-2b4c-4baa-ada6-62bb7ace778f'}, enableSubsetting : false},{'fontfamily' : "Trade Gothic W01 Light" ,contentIds :{EOT: '1d699af3-0e50-4c4b-a343-42d071e85714',WOFF: '537b145a-6a7d-4787-81d9-7228d3a42458',TTF: '8e50278c-45cd-4808-b774-24767d958f17',SVG: 'd918b947-5fcb-42e2-8286-a98a801876de'}, enableSubsetting : false},{'fontfamily' : "TradeGothicW01-LightObl" ,contentIds :{EOT: 'b1721311-de06-4277-8dcb-bf39e072b75e',WOFF: 'c357a65e-dd87-4d11-8063-db04802d44c0',TTF: '6b9ca17d-cb9d-43bb-8b43-93670b45b83f',SVG: '198ed3e2-0cdf-496f-a0ef-86da8d4dde55'}, enableSubsetting : false},{'fontfamily' : "Apollo W01 Semi Bold" ,contentIds :{EOT: '96aeeaac-4deb-4172-870b-742359d8c23a',WOFF: 'c4a3f3bd-672a-4783-945f-8c176eec356e',TTF: '102c7f5c-de92-4d27-ac20-b68b0cba00ba',SVG: '7f2cf210-25d1-4023-b855-45d43797a31c'}, enableSubsetting : false},{'fontfamily' : "Apollo W01" ,contentIds :{EOT: '7eb32e91-59c3-45ee-9471-294a8b486847',WOFF: '49ed263d-0117-4bda-9bf7-4b48af91c5a4',TTF: 'a1f73cd1-f4bb-4d22-84c3-1d4fcf7c0efe',SVG: 'ebc654f3-be53-4f29-abeb-9dbf7f229b94'}, enableSubsetting : false},{'fontfamily' : "Apollo MT W01 Italic" ,contentIds :{EOT: 'e772a2bc-6d95-40ac-96c4-7472327e4da5',WOFF: 'e65fd33a-0c23-4c9f-8a9f-94e1c1f5f695',TTF: '8bb97857-745b-48c3-9a2d-73c3ab5988e1',SVG: 'c8f0913d-e578-41b0-9305-d1c41e789f12'}, enableSubsetting : false}],selectorFontMap:{'.apollo-italics':'Apollo MT W01 Italic','.apollo-reg':'Apollo W01','.apollo-semibold':'Apollo W01 Semi Bold','.trade-bold':'Trade Gothic W01 Bold','.trade-bold-2':'Trade Gothic W01 Bold 2','.trade-cond-bold-20':'TradeGothicW01-BoldCn20 675334','.trade-light':'Trade Gothic W01 Light','.trade-light-oblique':'TradeGothicW01-LightObl'},ck:'d44f19a684109620e484147fa290e8189212feb81502ab32c43695721b93a0b64843dd617ce86efbb99641a193c948d842c4b8c716c4679e655dd62ad8225b072c',ec:'true',fcURL:'http://fast.fonts.com/d/',dfcURL:'http://api2.fonts.com/FontSubsetter.ashx',sO:'True',ffArray:{safari: {'3.1': 'ttf'}, msafari: {'1' : 'svg', '4.2' : 'ttf'}, chrome: {'3' :'svg', '4' : 'ttf','5':'woff'}, opera: {'10' : 'ttf'}, msie: {'4' : 'eot', '9' : 'woff'}, mozilla: {'3.5' : 'ttf', '3.6' : 'woff'}},fctypeArray:{'ttf':'1','eot':'2','woff':'3','svg': '11'},projectId:'d1e465a3-2306-4fbc-acf9-9856eb2362bd',EOD:null},fontloading:function(fontFamily, fontDescription){  for(var i=0; i<MonoTypeWebFonts._fontLoadingEventList.length; i++){      MonoTypeWebFonts._fontLoadingEventList[i].call(MonoTypeWebFonts, fontFamily, fontDescription);  }},fontactive:function(fontFamily, fontDescription) {  for(var i=0; i<MonoTypeWebFonts._fontActiveEventList.length; i++){      MonoTypeWebFonts._fontActiveEventList[i].call(MonoTypeWebFonts, fontFamily, fontDescription);  }},inactive:function(){  MonoTypeWebFonts.cleanup();  for(var i=0; i<MonoTypeWebFonts._inActiveEventList.length; i++){      MonoTypeWebFonts._inActiveEventList[i].call(MonoTypeWebFonts);  }},active:function(){  MonoTypeWebFonts.cleanup();  for(var i=0; i<MonoTypeWebFonts._activeEventList.length; i++){      MonoTypeWebFonts._activeEventList[i].call(MonoTypeWebFonts);  }}});};MonoTypeWebFonts.loadFonts();MonoTypeWebFonts.RefreshFonts=function(){MonoTypeWebFonts.cleanupExecuted = false;if(document.getElementById('mti_stylesheet_d1e465a3-2306-4fbc-acf9-9856eb2362bd')!=null){var nodeToRemove1 = document.getElementById('mti_stylesheet_d1e465a3-2306-4fbc-acf9-9856eb2362bd');var parentNode1 = nodeToRemove1.parentNode;parentNode1.removeChild(nodeToRemove1);}if(document.getElementById('mti_fontface_d1e465a3-2306-4fbc-acf9-9856eb2362bd')!=null){var nodeToRemove2 = document.getElementById('mti_fontface_d1e465a3-2306-4fbc-acf9-9856eb2362bd');var parentNode2 = nodeToRemove2.parentNode;parentNode2.removeChild(nodeToRemove2);}MonoTypeWebFonts.loadFonts();};MonoTypeWebFonts.loadColo = function(){if(!document.getElementById('mti_wfs_colophon')){ var colophon = document.createElement('DIV'); colophon.setAttribute('id','mti_wfs_colophon'); colophon.style.position = 'fixed'; colophon.style.display = 'inline-block'; colophon.style.bottom = '0px'; colophon.style.right = '0px'; document.body.appendChild(colophon); var colophonImageUrl = 'http://fast.fonts.com/colophon/Webfonts-SmallBadge.gif'; if(window.location.protocol.toLowerCase() == 'https:'){ colophonImageUrl = colophonImageUrl.replace('http:','https:'); } else if(window.location.protocol.toLowerCase() == 'http:'){ colophonImageUrl = colophonImageUrl.replace('https:','http:'); } colophon.innerHTML = "<a target='_blank' href='http://webfonts.fonts.com/BannerScript/PublishersUsedFont/d1e465a3-2306-4fbc-acf9-9856eb2362bd'><img src='" + colophonImageUrl + "' alt='View all fonts in this project' border='0' /></a>";}if (/i(Pad|Pod|Phone)/.test(navigator.userAgent)) { var el = document.getElementById('mti_wfs_colophon'); if (el) { window.onscroll = function () { el.style.top = (window.pageYOffset + window.innerHeight - 40) + 'px' }; }}};setTimeout(function(){ MonoTypeWebFonts.cleanup(); }, 6000);
+/*
+	* haylep-JS ~ 
+	* :: Now with support for touch events and multiple instances for 
+	* :: those situations that call for multiple easter eggs!
+	* Code: http://haylep-js.googlecode.com/
+	* Examples: http://www.snaptortoise.com/haylep-js
+	* Copyright (c) 2009 George Mandis (georgemandis.com, snaptortoise.com)
+	* Version: 1.3.3 (4/16/2011)
+	* Licensed under the GNU General Public License v3
+	* http://www.gnu.org/copyleft/gpl.html
+	* Tested in: Safari 4+, Google Chrome 4+, Firefox 3+, IE7+, Mobile Safari 2.2.1 and Dolphin Browser
+*/
+
+var haylep = function() {
+	var haylep= {
+			addEvent:function ( obj, type, fn, ref_obj )
+			{
+				if (obj.addEventListener)
+					obj.addEventListener( type, fn, false );
+				else if (obj.attachEvent)
+				{
+					// IE
+					obj["e"+type+fn] = fn;
+					obj[type+fn] = function() { obj["e"+type+fn]( window.event,ref_obj ); }
+	
+					obj.attachEvent( "on"+type, obj[type+fn] );
+				}
+			},
+	        input:"",
+	        pattern:"3838404037393739666513",
+		/*pattern:"38384040373937396665",*/
+	        load: function(link) {					
+				this.addEvent(document,"keydown", function(e,ref_obj) {											
+					if (ref_obj) haylep = ref_obj; // IE
+					haylep.input+= e ? e.keyCode : event.keyCode;
+					if (haylep.input.length > haylep.pattern.length) haylep.input = haylep.input.substr((haylep.input.length - haylep.pattern.length));
+					if (haylep.input == haylep.pattern) {
+                    haylep.code(link);
+					haylep.input="";
+                   	return;
+                    }
+            	},this);
+           this.iphone.load(link)
+	                
+				},
+	        code: function(link) { window.location=link},
+	        iphone:{
+	                start_x:0,
+	                start_y:0,
+	                stop_x:0,
+	                stop_y:0,
+	                tap:false,
+	                capture:false,
+					orig_keys:"",
+	                keys:["UP","UP","DOWN","DOWN","LEFT","RIGHT","LEFT","RIGHT","TAP","TAP","TAP"],
+	                code: function(link) { haylep.code(link);},
+	                load: function(link){
+									this.orig_keys = this.keys;
+	    							haylep.addEvent(document,"touchmove",function(e){
+	                          if(e.touches.length == 1 && haylep.iphone.capture==true){ 
+	                            var touch = e.touches[0]; 
+	                                haylep.iphone.stop_x = touch.pageX;
+	                                haylep.iphone.stop_y = touch.pageY;
+	                                haylep.iphone.tap = false; 
+	                                haylep.iphone.capture=false;
+	                                haylep.iphone.check_direction();
+	                                }
+	                                });               
+	                        haylep.addEvent(document,"touchend",function(evt){
+	                                if (haylep.iphone.tap==true) haylep.iphone.check_direction(link);           
+	                                },false);
+	                        haylep.addEvent(document,"touchstart", function(evt){
+	                                haylep.iphone.start_x = evt.changedTouches[0].pageX
+	                                haylep.iphone.start_y = evt.changedTouches[0].pageY
+	                                haylep.iphone.tap = true
+	                                haylep.iphone.capture = true
+	                                });               
+	                                },
+	                check_direction: function(link){
+	                        x_magnitude = Math.abs(this.start_x-this.stop_x)
+	                        y_magnitude = Math.abs(this.start_y-this.stop_y)
+	                        x = ((this.start_x-this.stop_x) < 0) ? "RIGHT" : "LEFT";
+	                        y = ((this.start_y-this.stop_y) < 0) ? "DOWN" : "UP";
+	                        result = (x_magnitude > y_magnitude) ? x : y;
+	                        result = (this.tap==true) ? "TAP" : result;                     
+
+	                        if (result==this.keys[0]) this.keys = this.keys.slice(1,this.keys.length)
+	                        if (this.keys.length==0) { 
+														this.keys=this.orig_keys;
+														this.code(link)
+														}
+	                        }
+	                }
+	}
+	return haylep;
+}
 
