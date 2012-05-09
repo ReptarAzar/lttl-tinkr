@@ -5206,36 +5206,11 @@ p.subhead, p.about {
 
 }
 
-
-#jobs {
-	padding: 20px 0;
-	margin-bottom: 30px;
-	background-color: rgba(255,255,255,.75);
-	-webkit-border-bottom-right-radius: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-	-moz-border-radius-bottomright: 5px;
-	-moz-border-radius-bottomleft: 5px;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border: 1px solid rgba(0,0,0,.25);
-	border-top:none;
-}
-#jobs h2 {
-	margin-bottom: 0;
-	font-size: 30px;
-	line-height: 1.35em;
-	color: inherit;
-	letter-spacing: -0.035em;;
-	font-family: 'Trade Gothic W01 Bold';
-}
-#jobs p {
-	font-size: 20px;
-	font-weight: 200;
-	line-height: 32px;
-	color: inherit;
-	font-family: 'Trade Gothic W01 Light';
+#jobs{
+	background:#fff;
 }
 
-#jobs img {
-	max-width:800px;
+#jobs img{
+	width:800px;
+	margin:0 auto;
 }
