@@ -3,7 +3,7 @@ var tumblrBadge = function () {
 	// User settings
 	var settings = {
 		userName : "makesweetshit", // Your Tumblr user name
-		itemsToShow : 6, // Number of Tumblr posts to retrieve
+		itemsToShow : 3, // Number of Tumblr posts to retrieve
 		itemToAddBadgeTo : "tumblr-badge", // Id of HTML element to put badge code into
 		imageSize : 75, // Values can be 75, 100, 250, 400 or 500
 		shortPublishDate : true, // Whether the publishing date should be cut shorter
@@ -41,13 +41,13 @@ var tumblrBadge = function () {
 
 					// Create a link to Tumblr post
 					postLink = document.createElement("a");
-					postLink.className = "tumblr-post-date";
+					postLink.className = "tumblr-regular-title";
 					postLink.href = post.url;
 					postLink.innerHTML = post["regular-title"];
-					listItem.appendChild(postLink);
+					listItem.insertBefore(listItem);
 
 					// Apply list item to list
-					list.appendChild(listItem);
+					list.insertBefore(listItem);
 				}
 			}
 			
