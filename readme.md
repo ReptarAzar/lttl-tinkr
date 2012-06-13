@@ -1,6 +1,6 @@
 # [LittleTinker.co](http://littletinker.co)
 
-We make sweets hit.
+We make sweets shit.
 
 ## Features
 
