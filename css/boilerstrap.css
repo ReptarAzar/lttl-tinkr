@@ -66,7 +66,7 @@ article,
 aside,
 details,
 figcaption,
-figure,
+figure,`
 footer,
 header,
 hgroup,
@@ -468,7 +468,7 @@ h6 {
 ul,
 ol {
 	padding: 0;
-	margin: 0 0 9px 25px;
+	margin: 0 0 9px 10px;
 }
 ul ul,
 ul ol,
@@ -4104,4 +4104,7 @@ to {
 }
 #mti_wfs_colophon img:hover {
 	opacity: .85 !important;
+}
+a.underline {
+	border-bottom: 1px #BBB solid;
 }
