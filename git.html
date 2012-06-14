@@ -86,17 +86,20 @@ function tumblr(resp) {
     <div class="container-fluid">
     <div class="row-fluid">
 		<div class="span12 intro">
+<h1>Git <span style="color:#bbb;">(for agile dev teams)</span> </h1> 
+<h2>Create new projects with Git and your MacMini Server</h2> 
+This tutorial has two very specific use cases. For more general info about Git, check out <a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/" 
+target="_blank" title="No joke, it's magic.">Stanford's guide to git magic</a>. This tutorial is for people looking to create a live dev/staging environment to their development workflow while harnessing the versioning and magic of Git. The advantages of working locally and pushing to a designated 'staging' site include 1- peace of mind (at any one time the site is on three different drives in different places -- locally, the Mac Mini, and Github.com) 2- the ability to see your code live and in the wild before you publish it to the public 3- we get things done faster when we can work together. <strong>Note: Code in CAPS is varible project-to-project. </strong>
 
-<h1>Set up Git on your MacMini Server</h1> 
+<br /><br />
+<hr>
 
-Notes: all code in CAPS is varible to project or info.
-
-
-<h2>Brand new project instructions</h2>
-
-<p>Go to http://github.com/LittleTinker<br />
-Create new repo<br />
-In Terminal change directory to the local folder where you want the local project to live.<br /></p>
+<br />
+<br />
+<h2>Starting a new project</h2>
+<br />
+Go to <a href="http://github.com/LittleTinker" target="_blank" title="Github">http://github.com/LittleTinker</a> and create a new repo. <br>
+In <a href="http://en.wikipedia.org/wiki/Terminal_(OS_X)" target="_blank" title="Terminal on Wikipedia">Terminal</a> change directory (aka "cd") to the local folder where you want the project to live locally on your machine.
 <pre>
 cd Sites/
 mkdir REPO_NAME
@@ -113,9 +116,10 @@ To set permissions for git to read/write to the MacMini server insert the follow
 #!/bin/sh
 GIT_WORK_TREE=/Volumes/Macintosh\ HD2/Websites/dev.littletinker.co/REPO_NAME/ git checkout -f
 </pre>
-In a new terminal window SSH into Mac Mini.
+<br>
+In a <em>new terminal window</em> SSH into Mac Mini
 <pre>SSH azar/chris/isaac@minitinker.littletinker.co</pre>
-cd to the git directory that will hold all git files on the MacMini. 
+cd to the git directory that will hold all git files on the Mac Mini
 <pre>
 cd /Volumes/Documents
 mkdir git
@@ -136,15 +140,11 @@ Now lets push to github.com (aka "origin")
 <pre>git push origin master</pre>
 
 
+<br /><br />
 
-
-
-
-<h2>So you or someone else have created the repo..</h2>
-<h3>Now what??</h3>
-
-If another team member created the repo already, just clone it into the local directory of your choosing. 
-If you've already cloned the repo, skip this.
+<h2>Joining an existing project</h2>
+<br />
+If another team member created the repo already and it is your first time working on this project, clone it into the local directory of your choosing.
 <pre>
 cd Sites/
 mkdir REPO_NAME
@@ -153,7 +153,7 @@ git clone https://github.com/LittleTinker/REPO_NAME.git
 </pre>
 
 
-Always PULLL first! 
+Always PULL first! 
 <pre>git pull</pre>
 
 If this is your first time working on this project, add a remote called "dev" 
@@ -180,11 +180,11 @@ If you are working on a branch..
 or if you are working on the master..
 <pre>git push dev master</pre>
 
+<br>
 
-
-<h2>Go have a beer. </h2>
-
-
+<h2>Great work! <span style="color:#bbb;">Go have a beer.</span> </h2>
+    <hr>
+<br /><br /><br />
 
 
 
