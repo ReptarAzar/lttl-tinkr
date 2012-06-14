@@ -4105,3 +4105,6 @@ to {
 #mti_wfs_colophon img:hover {
 	opacity: .85 !important;
 }
+a.underline {
+	border-bottom: 1px #BBB solid;
+}
