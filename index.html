@@ -40,21 +40,21 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
 
-<script type="text/javascript">
-function tumblr(resp) {
-  var posts = resp.posts;
-  $('#blog .loading').replaceWith('<ul/>');
-  $ul = $('#blog ul');
-  for (var i=0; i<posts.length; i++) {
-    var p = posts[i];
-                var title = p['regular-title'] || p['link-text'] || null, body = p['regular-body'] || null;
-    if (title) {
-      $ul.append('<h3><a href="'+p['url']+'">'+title+'</a></h3>');
-      $ul.append('<p>'+body+'</p>');
+    <script type="text/javascript">
+    function tumblr(resp) {
+      var posts = resp.posts;
+      $('#blog .loading').replaceWith('<ul/>');
+      $ul = $('#blog ul');
+      for (var i=0; i<posts.length; i++) {
+        var p = posts[i];
+                    var title = p['regular-title'] || p['link-text'] || null, body = p['regular-body'] || null;
+        if (title) {
+          $ul.append('<h3><a href="'+p['url']+'">'+title+'</a></h3>');
+          $ul.append('<p>'+body+'</p>');
+        }
+      }
     }
-  }
-}
-</script>
+    </script>
 
 
   </head>
@@ -87,9 +87,9 @@ function tumblr(resp) {
       <div class="row-fluid">
 		<div class="span12 intro">
 	    <img class="bro" src="img/sxsw.png" alt="sxsw">
-         <div id="heading" class="trade-bold-2"><h1>We scale meaningful experiences.</h1></div>
-            <p class="subhead"><span>Let's get away from screens and bring technology back into the real world. </span> We are little tinkerers, fresh faced kids with big ideas who love building. We tear apart the code from our favorite social media platforms and build things that combine the physical and digital space.</p>
-            <p><a href="/about" class="btn btn-inverse btn-medium">Learn more &raquo;</a></p>
+         <div id="heading" class="trade-bold-2 docuready"><h1>We scale meaningful experiences.</h1></div>
+            <p class="subhead docuready"><span>Let's get away from screens and bring technology back into the real world. </span> We are little tinkerers, fresh faced kids with big ideas who love building. We tear apart the code from our favorite social media platforms and build things that combine the physical and digital space.</p>
+            <p><a href="/about" id="learnmore" class="btn btn-inverse btn-medium docuready">Learn more &raquo;</a></p>
         </div>
         <div class="span12 hero-head">
             <h3 id="sweet-shit">Recent Projects</h3>
