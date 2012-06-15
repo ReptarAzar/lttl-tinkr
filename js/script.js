@@ -61,9 +61,7 @@ $(document).ready(function() {
     }
     return [];
   }
-
-  $("#heading, .subhead, #learnmore").animate({opacity:1});
-
+  
 });
 
 
