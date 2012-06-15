@@ -16,8 +16,8 @@ $("#logo").hover(
 
 
 $(document).ready(function() {
-	$("#heading, .subhead, #learnmore").animate({opacity:1});
-	
+	$("#heading, .subhead, #learnmore").animate({opacity:1, top:'+=20'});
+
   function filterPath(string) {
   return string
     .replace(/^\//,'')
