@@ -4044,48 +4044,6 @@ to {
 .invisible {
 	visibility: hidden;
 }
-/*Type Replacement*/
-
-/* Apollo™ Regular */
-.apollo-reg	{
-	font-family:'Apollo W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-	
-/* Apollo™ Italic */
-.apollo-italics	{
-	font-family:'Apollo MT W01 Italic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-/* Apollo™ Semi Bold */
-.apollo-semibold {
-	font-family:'Apollo W02 SemiBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}	
-
-
-/* Trade Gothic® Bold */
-.trade-bold	{
-	font-family:'Trade Gothic W01 Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-/* Trade Gothic® Bold #2 */
-.trade-bold-2 {
-	font-family:'Trade Gothic W01 Bold 2', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}	
-
-/* Trade Gothic® Condensed Bold #20 */
-.trade-cond-bold-20	{
-	font-family:'TradeGothicW01-BoldCn20 675334', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-/* Trade Gothic® Light */
-.trade-light {
-	font-family:'Trade Gothic W01 Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}	
-
-/* Trade Gothic® Light Oblique */
-.trade-light-oblique {
-	font-family:'TradeGothicW01-LightObl', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}	
 
 #mti_wfs_colophon img {
 	opacity: 0 !important;
