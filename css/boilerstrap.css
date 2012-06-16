@@ -4020,14 +4020,14 @@ to {
 	line-height: 1.35em;
 	color: inherit;
 	letter-spacing: -0.035em;;
-	font-family: 'Trade Gothic W01 Bold';
+	font-family: 'TradeGothic-Bold';
 }
 #projects p {
 	font-size: 20px;
 	font-weight: 200;
 	line-height: 32px;
 	color: inherit;
-	font-family: 'Trade Gothic W01 Light';
+	font-family: 'TradeGothic-Light';
 }
 .pull-right {
 	float: right;

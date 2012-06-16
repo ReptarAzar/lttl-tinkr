@@ -803,7 +803,7 @@ p.subhead, p.about {
 	line-height: 1.35em;
 	color: inherit;
 	letter-spacing: -1px;
-	font-family: 'Trade Gothic W01 Bold';
+	font-family: 'TradeGothic-Bold';
 }
 
 #projects p {
@@ -811,7 +811,7 @@ p.subhead, p.about {
 	font-weight: 200;
 	line-height: 32px;
 	color: inherit;
-	font-family: 'Trade Gothic W01 Light';
+	font-family: 'TradeGothic-Light';
 }
 
 }

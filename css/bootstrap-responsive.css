@@ -4020,14 +4020,14 @@ to {
 	line-height: 1.35em;
 	color: inherit;
 	letter-spacing: -0.035em;;
-	font-family: 'Trade Gothic W01 Bold';
+	font-family: 'TradeGothic-Bold';
 }
 #projects p {
 	font-size: 20px;
 	font-weight: 200;
 	line-height: 32px;
 	color: inherit;
-	font-family: 'Trade Gothic W01 Light';
+	font-family: 'TradeGothic-Light';
 }
 .pull-right {
 	float: right;
@@ -4064,12 +4064,12 @@ to {
 
 /* Trade Gothic® Bold */
 .trade-bold	{
-	font-family:'Trade Gothic W01 Bold';
+	font-family:'TradeGothic-Bold';
 }
 
 /* Trade Gothic® Bold #2 */
 .trade-bold-2 {
-	font-family:'Trade Gothic W01 Bold 2';
+	font-family:'TradeGothic-Bold 2';
 }	
 
 /* Trade Gothic® Condensed Bold #20 */
@@ -4079,7 +4079,7 @@ to {
 
 /* Trade Gothic® Light */
 .trade-light {
-	font-family:'Trade Gothic W01 Light';
+	font-family:'TradeGothic-Light';
 }	
 
 /* Trade Gothic® Light Oblique */
@@ -4158,7 +4158,7 @@ div.intro h1 {
 	letter-spacing: 1px;
 	width: 40%;
 	float: left;
-	font-family: 'Trade Gothic W01 Bold';
+	font-family: 'TradeGothic-Bold';
 }
 .hero-head h4 a {
 	padding: 16px 15px;
@@ -4228,7 +4228,7 @@ p.subhead {
 	width: 57%;
 	font-size: 1.4em;
 	line-height: 1.5;
-	font-family: 'Trade Gothic W01 light';
+	font-family: 'TradeGothic-Light';
 }
 p.subhead span {
 	width: 100%;
@@ -5152,7 +5152,7 @@ p.subhead, p.about {
 	line-height: 1.35em;
 	color: inherit;
 	letter-spacing: -1px;
-	font-family: 'Trade Gothic W01 Bold';
+	font-family: 'TradeGothic-Bold';
 }
 
 #projects p {
@@ -5160,7 +5160,7 @@ p.subhead, p.about {
 	font-weight: 200;
 	line-height: 32px;
 	color: inherit;
-	font-family: 'Trade Gothic W01 Light';
+	font-family: 'TradeGothic-Light';
 }
 
 }
