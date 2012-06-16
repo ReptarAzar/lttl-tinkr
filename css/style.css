@@ -296,3 +296,14 @@ a.btn img {
   width: 800px;
   margin: 0 auto;
 }
+/*
+start at opacity zero until the document is ready
+ - by becker
+ */
+.docuready {
+  position:relative;
+  top:-20px;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter:alpha(opacity=0);
+}
