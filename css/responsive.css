@@ -1,6 +1,4 @@
 
-
-
 /*!
  * Bootstrap Responsive v2.0.2
  *
@@ -62,6 +60,9 @@
   display: none;
 }
 @media (max-width: 767px) {
+  .navbar .btn, .navbar .btn-group {
+    margin-top: 40px;
+  }
   .visible-phone {
     display: block;
   }
@@ -159,8 +160,8 @@ width:100%;
     padding-right: 20px;
   }
 .container-fluid {
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
   .navbar-fixed-top {
     margin-left: -20px;
@@ -430,7 +431,7 @@ p.subhead {
     margin-bottom: 18px;
   }
   .navbar-fixed-top .navbar-inner {
-    padding: 0 5px;
+    padding: 0 5px 10px;
   }
   .navbar .container {
     width: auto;

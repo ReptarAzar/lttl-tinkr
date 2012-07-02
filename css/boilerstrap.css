@@ -2936,7 +2936,7 @@ input[type="submit"].btn.btn-mini {*padding-top:1px;*padding-bottom:1px;
 .navbar .brand {
 	float: left;
 	display: block;
-	padding: 15px 2.564103% 13px;
+	padding: 15px 0 13px 2.564103%;
 	margin-left: 0;
 	font-size: 35px;
 	font-weight: 200;
@@ -3109,7 +3109,7 @@ input[type="submit"].btn.btn-mini {*padding-top:1px;*padding-bottom:1px;
 }
 .navbar .nav.pull-right {
 	margin-left: 0;
-	margin-right: 2.56%;
+	margin-right: 0;
 }
 .navbar .dropdown-menu {
 	margin-top: 1px;

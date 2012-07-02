@@ -22,6 +22,7 @@ div.intro h1 {
 .brand img {
   top: 4px;
   position: relative;
+  float: left;
 }
 .brand img.hardhat {
   margin-left: 10px;
