@@ -20,12 +20,11 @@ div.intro h1 {
   line-height: 1em;
 }
 .brand img {
-  margin-left: 0;
-  margin-bottom: 7px;
+  top: 4px;
+  position: relative;
 }
 .brand img.hardhat {
   margin-left: 10px;
-  margin-bottom: 10px;
 }
 .hero-head {
   background-color: #2a2a2a;
