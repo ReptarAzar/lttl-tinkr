@@ -9,7 +9,7 @@ body{margin:0;font-size:1em;line-height:1.4;}
 ::-moz-selection{background:#FFC200;color:#fff;text-shadow:none;}
 ::selection{background:#FFC200;color:#fff;text-shadow:none;}
 a{color:#00e;}
-a:visited{color:#555;}
+a:visited{color:#111;}
 a:hover{color:#06e;}
 a:focus{outline:thin dotted;}
 a:hover,a:active{outline:0;}
@@ -195,7 +195,7 @@ textarea {
 }
 body {
 	margin: 0;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: 'TisaOT' "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: #333333;
@@ -381,7 +381,7 @@ a:hover {
 }
 p {
 	margin: 0 0 9px;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:'TisaOT', "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 }
@@ -402,7 +402,7 @@ h4,
 h5,
 h6 {
 	margin: 0;
-	font-family: inherit;
+	font-family: 'TradeGothic-Bold';
 	font-weight: bold;
 	color: inherit;
 	text-rendering: optimizelegibility;
@@ -3084,9 +3084,8 @@ input[type="submit"].btn.btn-mini {*padding-top:1px;*padding-bottom:1px;
 	margin-left: 15px;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: .9em;
-	letter-spacing: 0.09em;
-
+	font-size: 1.15em;
+	font-family: 'TradeGothic-Bold';
 }
 .navbar .nav > li > a:hover {
 	background-color: transparent;
@@ -4025,7 +4024,7 @@ to {
 #projects p {
 	font-size: 20px;
 	font-weight: 200;
-	line-height: 32px;
+	line-height: 30px;
 	color: inherit;
 	font-family: 'TradeGothic-Light';
 }
