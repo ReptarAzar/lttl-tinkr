@@ -797,7 +797,7 @@ div.intro img.bro {
 	width: 375px;
 	float: right;
 	margin-right: 0;
-	bottom: -60px;
+	bottom: -30px;
 	position: relative;
 	right: 1%;
 	z-index: -5;
@@ -832,7 +832,7 @@ p.subhead, p.about {
 		width: 375px;
 		float: right;
 		margin-right: 0;
-		bottom: -60px;
+		bottom: -30px;
 		position: relative;
 		right: 1%;
 		z-index: -5;
@@ -851,7 +851,7 @@ p.subhead, p.about {
 		width: 375px;
 		float: right;
 		margin-right: 0;
-		bottom: -55px;
+		bottom: -40px;
 		position: relative;
 		right: 1%;
 		z-index: -5;
