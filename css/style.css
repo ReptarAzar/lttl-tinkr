@@ -275,7 +275,10 @@ a.btn img {
   margin-bottom: 20px;
 }
 
-
+img.projects-hero {
+  border: 5px solid #faf04f;
+  width: 100%;
+}
 
 
 
