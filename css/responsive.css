@@ -181,7 +181,7 @@ width:100%;
 /*    float: none;*/
     display: block;
 /*    width: auto;*/
-    margin: 0;
+    /*margin: 0;*/
   }
   .thumbnails [class*="span"] {
     width: auto;
@@ -659,7 +659,7 @@ p.subhead {
     width: 74.358974359%;
   }
   .row-fluid > .span8 {
-    width: 65.81196581200001%;
+    width: 64.81196581200001%;
   }
   .row-fluid > .span7 {
     width: 57.264957265%;
