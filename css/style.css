@@ -275,13 +275,37 @@ a.btn img {
   margin-bottom: 20px;
 }
 
+/* Project Page Styles */
+
 img.projects-hero {
   border: 5px solid #faf04f;
   width: 100%;
 }
+img.projects-thumb:hover {
+  border: 5px solid #BBB;
+  cursor: pointer;
 
+}
+img.projects-thumb {
+  border: 5px solid #848484;
+  width: 10%; 
+  margin: 1% 2% 2% 0;
+  -moz-transition-property: all;
+  -moz-transition-duration: .4s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: .4s;
+  -o-transition-property: all;
+  -o-transition-duration: .4s;
+  -ms-transition-property: all;
+  -ms-transition-duration: .4s;
+  transition-property: all;
+  transition-duration: .4s;
+}
+img.projects-thumb.active, img.projects-thumb.active:hover {
+  border: 5px solid #faf04f;
+}
 
-
+/* End Project Page Styles */
 /*
 start at opacity zero until the document is ready
  - by becker
