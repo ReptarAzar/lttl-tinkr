@@ -374,9 +374,13 @@ img.projects-thumb.active, img.projects-thumb.active:hover {
   text-transform: none;
 }
 
-p.project-paragraph {
-  font: 1.25em/1.5em TisaOT, sans-serif;
-  
+.project-paragraph p {
+  font: 1.2em/1.5em TisaOT, sans-serif;
+}
+#project-sidebar img:hover {
+  opacity:.9;
+  cursor:pointer;
+
 }
 
 
