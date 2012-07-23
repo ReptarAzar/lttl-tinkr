@@ -93,6 +93,22 @@ function tumblr(resp) {
         <!-- <div id="corner"></div> -->
         <span class="projects-hero"><img class="projects-hero-img" src="../img/projects/main.jpg" alt="Little Tinker" title="Take me home tonight."></span><div id="btm-corner"></div>
 
+
+
+  <div class="gallery">
+  <img src="gallery/img_1.jpg" alt="" class="main-img" />
+  <ul>
+    <li><img src="gallery/thumb/img_1.jpg" alt="" /></li>
+    <li><img src="gallery/thumb/img_2.jpg" alt="" /></li>
+    <li><img src="gallery/thumb/img_3.jpg" alt="" /></li>
+    <li><img src="gallery/thumb/img_4.jpg" alt="" /></li>
+    <li><img src="gallery/thumb/img_5.jpg" alt="" /></li>
+    <li><img src="gallery/thumb/img_6.jpg" alt="" /></li>
+  </ul>
+</div>
+
+
+
       <img class="projects-thumb active" src="../img/projects/main.jpg" alt="Little Tinker" title="Take me home tonight.">
       <img class="projects-thumb" src="../img/projects/main.jpg" alt="Little Tinker" title="Take me home tonight.">
       <img class="projects-thumb" src="../img/projects/main.jpg" alt="Little Tinker" title="Take me home tonight.">
@@ -147,10 +163,31 @@ function tumblr(resp) {
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/script.js"></script>
-    <script src="js/plugins.js"></script>
+    <script src="../js/libs/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/plugins.js"></script>
 
-
+<script type="text/JavaScript">
+// prepare the form when the DOM is ready 
+$(document).ready(function() {
+  var galleryClass = '.gallery';
+  $(galleryClass+' li img').hover(function(){
+    var $gallery = $(this).parents(galleryClass);
+    $('.main-img',$gallery).attr('src',$(this).attr('src').replace('thumb/', ''));
+  });
+  var imgSwap = [];
+   $(galleryClass+' li img').each(function(){
+    imgUrl = this.src.replace('thumb/', '');
+    imgSwap.push(imgUrl);
+  });
+  $(imgSwap).preload();
+});
+$.fn.preload = function() {
+    this.each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+</script>
 
 
 <!-- Analytics for LittleTinker.co -->
