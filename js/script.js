@@ -1,16 +1,4 @@
-    function tumblr(resp) {
-      var posts = resp.posts;
-      $('#blog .loading').replaceWith('<ul/>');
-      $ul = $('#blog ul');
-      for (var i=0; i<posts.length; i++) {
-        var p = posts[i];
-                    var title = p['regular-title'] || p['link-text'] || null, body = p['regular-body'] || null;
-        if (title) {
-          $ul.append('<h3><a href="'+p['url']+'">'+title+'</a></h3>');
-          $ul.append('<p>'+body+'</p>');
-        }
-      }
-    };
+
 
 
 
