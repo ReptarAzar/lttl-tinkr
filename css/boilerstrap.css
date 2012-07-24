@@ -496,7 +496,6 @@ dd {
 	line-height: 18px;
 }
 dt {
-	font-weight: bold;
 	line-height: 17px;
 }
 dd {
@@ -1236,9 +1235,7 @@ table {
 	vertical-align: top;
 	border-top: 1px solid #dddddd;
 }
-.table th {
-	font-weight: bold;
-}
+
 .table thead th {
 	vertical-align: bottom;
 }
@@ -1973,7 +1970,6 @@ table .span24 {
 .close {
 	float: right;
 	font-size: 20px;
-	font-weight: bold;
 	line-height: 18px;
 	color: #000000;
 	text-shadow: 0 1px 0 #ffffff;
@@ -2019,7 +2015,6 @@ table .span24 {
 	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
 	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
 	cursor: pointer;*margin-left:.3em;
-	font-weight: bold;
 	font-family: 'TisaOT-Bold';
 }
 .btn:hover,
@@ -2492,7 +2487,6 @@ input[type="submit"].btn.btn-mini {*padding-top:1px;*padding-bottom:1px;
 	display: block;
 	padding: 3px 15px;
 	font-size: 11px;
-	font-weight: bold;
 	line-height: 18px;
 	color: #999999;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
@@ -3082,7 +3076,6 @@ input[type="submit"].btn.btn-mini {*padding-top:1px;*padding-bottom:1px;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
 	margin-left: 15px;
 	text-transform: uppercase;
-	/*font-weight: bold;*/
 	font-size: 1.15em;
 	font-family: 'TradeGothic-Bold';
 	letter-spacing: 1px;
@@ -3613,7 +3606,6 @@ a.thumbnail:hover {
 .label {
 	padding: 1px 4px 2px;
 	font-size: 10.998px;
-	font-weight: bold;
 	line-height: 13px;
 	color: #ffffff;
 	vertical-align: middle;
@@ -3661,7 +3653,6 @@ a.thumbnail:hover {
 .badge {
 	padding: 1px 9px 2px;
 	font-size: 12.025px;
-	font-weight: bold;
 	white-space: nowrap;
 	color: #ffffff;
 	background-color: #999999;

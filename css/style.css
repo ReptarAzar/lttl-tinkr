@@ -224,8 +224,8 @@ iframe {
   margin-top: 5px;
 }
 footer {
-  font-weight: bold;
   line-height: 2em;
+  font-family: "TisaOT-Bold", sans-serif;
 }
 footer a {
   margin-right: 5px;
