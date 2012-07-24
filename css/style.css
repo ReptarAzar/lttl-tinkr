@@ -370,15 +370,15 @@ ul {
   max-width:120px; 
   margin: 0 2% 2% 0;
   height:80px;
-  -moz-transition-property: all;
+  -moz-transition-property: color;
   -moz-transition-duration: .1s;
-  -webkit-transition-property: all;
+  -webkit-transition-property: color;
   -webkit-transition-duration: .1s;
-  -o-transition-property: all;
+  -o-transition-property: color;
   -o-transition-duration: .1s;
-  -ms-transition-property: all;
+  -ms-transition-property: color;
   -ms-transition-duration: .1s;
-  transition-property: all;
+  transition-property: color;
   transition-duration: .1s;
 }
 .gallery li img:hover {
