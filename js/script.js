@@ -1,8 +1,4 @@
 
-
-
-
-
 $("#projects-link").click(function () {
   $(this).addClass("active");
 });

@@ -732,6 +732,11 @@ p.subhead {
   }
 }
 
+.brand-phone {
+  width:50%;
+}
+
+
 /* That bloody top image... */
 
 @media (max-width: 800px) {
