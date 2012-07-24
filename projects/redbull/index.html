@@ -140,11 +140,12 @@
 $(document).ready(function() {
 
   var galleryClass = '.gallery';
+  var thumb = galleryClass+' li img';
   $(galleryClass+' li img').click(function(){
     var $gallery = $(this).parents(galleryClass);
-    $.removeClass('active-thumb')
     $('.main-img',$gallery).attr('src',$(this).attr('src').replace('thumb/', ''));
-    $(this).addClass("active-thumb");
+    $(this).addClass('a-thumb img');
+    $all.removeClass('active-thumb');
 
   });
   var imgSwap = [];

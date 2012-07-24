@@ -377,7 +377,7 @@ ul {
 .gallery li {
   display: inline; margin-right: 3px;
 }
-.gallery li {
+.gallery li img {
   padding: 5px;
   background: #BBB;
   width: 10%;
@@ -402,20 +402,27 @@ ul {
   cursor: pointer;
 }
 
-.gallery li.active-thumb img {
+.a-thumb {
   padding: 0 !important;
   border: 5px solid #faf04f;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
 }
-.active-thumb:hover {
+
+.active-thumb img{
+  padding: 0 !important;
+  border: 5px solid #faf04f;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+.active-thumb img:hover {
   padding: 0;
   border: 5px solid #faf04f;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
 }
 
-li.active img {
+/*li.active img {
   padding: 0;
   border: 5px solid #faf04f;
   border-right: 5px solid transparent;
@@ -426,7 +433,7 @@ li.active img:hover {
   border: 5px solid #faf04f;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
-}
+}*/
 /* End Project Page Styles */
 /*
 start at opacity zero until the document is ready
