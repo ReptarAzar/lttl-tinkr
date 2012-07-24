@@ -78,7 +78,7 @@
     <span class="projects-hero-img"><img src="gallery/img_1.jpg" alt="" class="main-img" /></span>
     <div id="btm-corner"></div>
   <ul>
-    <li class="active-thumb"><img src="gallery/thumb/img_1.jpg" alt="" /></li>
+    <li class=""><img src="gallery/thumb/img_1.jpg" alt="" /></li>
     <li><img src="gallery/thumb/img_2.jpg" alt="" /></li>
     <li><img src="gallery/thumb/img_3.jpg" alt="" /></li>
     <li><img src="gallery/thumb/img_4.jpg" alt="" /></li>
@@ -143,9 +143,12 @@ $(document).ready(function() {
   var thumb = galleryClass+' li img';
   $(galleryClass+' li img').click(function(){
     var $gallery = $(this).parents(galleryClass);
-    $('.main-img',$gallery).attr('src',$(this).attr('src').replace('thumb/', ''));
+    $('li img').removeClass('active-thumb img');
+    $('li img').removeClass('a-thumb img');
     $(this).addClass('a-thumb img');
-    $all.removeClass('active-thumb');
+    $('.main-img',$gallery).attr('src',$(this).attr('src').replace('thumb/', ''));
+    
+    
 
   });
   var imgSwap = [];
