@@ -200,6 +200,22 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/libs/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        function tumblr(resp) {
+      var posts = resp.posts;
+      $('#blog .loading').replaceWith('<ul/>');
+      $ul = $('#blog ul');
+      for (var i=0; i<posts.length; i++) {
+        var p = posts[i];
+                    var title = p['regular-title'] || p['link-text'] || null, body = p['regular-body'] || null;
+        if (title) {
+          $ul.append('<h3><a href="'+p['url']+'">'+title+'</a></h3>');
+          $ul.append('<p>'+body+'</p>');
+        }
+      }
+    }
+    </script>
+
     <script src="http://makesweetshit.tumblr.com/api/read/json?callback=tumblr&amp;num=3" type="text/javascript"></script>
     <script src="js/script.js"></script>
     <script src="js/plugins.js"></script>
