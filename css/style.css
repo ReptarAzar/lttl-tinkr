@@ -371,15 +371,15 @@ ul {
   margin: 0 2% 2% 0;
   height:80px;
   -moz-transition-property: all;
-  -moz-transition-duration: .2s;
+  -moz-transition-duration: .1s;
   -webkit-transition-property: all;
-  -webkit-transition-duration: .2s;
+  -webkit-transition-duration: .1s;
   -o-transition-property: all;
-  -o-transition-duration: .2s;
+  -o-transition-duration: .1s;
   -ms-transition-property: all;
-  -ms-transition-duration: .2s;
+  -ms-transition-duration: .1s;
   transition-property: all;
-  transition-duration: .2s;
+  transition-duration: .1s;
 }
 .gallery li img:hover {
   padding: 5px;

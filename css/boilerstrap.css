@@ -3084,9 +3084,10 @@ input[type="submit"].btn.btn-mini {*padding-top:1px;*padding-bottom:1px;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
 	margin-left: 15px;
 	text-transform: uppercase;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	font-size: 1.15em;
 	font-family: 'TradeGothic-Bold';
+	letter-spacing: 1px;
 }
 .navbar .nav > li > a:hover {
 	background-color: transparent;
