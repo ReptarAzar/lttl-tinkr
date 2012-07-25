@@ -1438,6 +1438,9 @@ table .span24 {
 .icon-white {
 	background-image: url("../img/glyphicons-halflings-white.png");
 }
+.icon-wrench {
+	background-position: -360px -144px;
+}
 .icon-glass {
 	background-position: 0 0;
 }

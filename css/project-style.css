@@ -177,6 +177,10 @@ button {
 .box p {
   padding: 10px 10px 5px;
 }
+.box i {
+  float:right;
+  margin-top:3px;
+}
 
 /**** Gutters ****/
 
