@@ -74,33 +74,18 @@
 
 
 
-
-
-<body>
-
-  <div id="page">
-      
-       
-    
-
-    <div class="yt_holder">
-      <div id="ytvideo2"></div>
-        <ul class="demo2">
-      <li><a href="gogh5.jpg">van gogh</a></li>
-            <li><a href="http://www.youtube.com/watch?v=QBBWKvY-VDc"></a></li>
-            <li><a href="http://www.youtube.com/watch?v=ZXMQqLnRhRI"></a></li>
-            <li><a href="http://youtu.be/L0CsLefLisE"></a></li>
-      <li><a href="IMG_2927.JPG">Yo</a></li>
-      <li><a href="IMG_2906.JPG">Test 2</a></li>
-        </ul>
-    </div>
-    
-    
-    
-    </div>
-
-  
-
+  <div class="gallery">
+    <span class="projects-hero-img"><img src="gallery/img_1.jpg" alt="" class="main-img" /></span>
+    <div id="btm-corner"></div>
+  <ul>
+    <li class=""><img src="gallery/thumb/img_1.jpg" alt="" /></li>
+    <li><img src="gallery/thumb/img_2.jpg" alt="" /></li>
+    <li><img src="gallery/thumb/img_3.jpg" alt="" /></li>
+    <li><img src="gallery/thumb/img_4.jpg" alt="" /></li>
+    <li><img src="gallery/thumb/img_5.jpg" alt="" /></li>
+    <li><img src="gallery/thumb/img_6.jpg" alt="" /></li>
+  </ul>
+</div>
 
 
      
@@ -150,14 +135,35 @@
     </div><!--/.fluid-container-->
 
 <script src="../../js/libs/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript" src="../../js/jquery.youtubeplaylist.js"></script>
+<script type="text/JavaScript">
+// prepare the form when the DOM is ready 
+$(document).ready(function() {
 
-<script type="text/ecmascript">
+  var galleryClass = '.gallery';
+  var thumb = galleryClass+' li img';
+  $(galleryClass+' li img').click(function(){
+    var $gallery = $(this).parents(galleryClass);
+    $('li img').removeClass('active-thumb img');
+    $('li img').removeClass('a-thumb img');
+    $(this).addClass('a-thumb img');
+    $('.main-img',$gallery).attr('src',$(this).attr('src').replace('thumb/', ''));
+    
+    
+
+  });
+  var imgSwap = [];
+   $(galleryClass+' li img').each(function(){
+    imgUrl = this.src.replace('thumb/', '');
+    imgSwap.push(imgUrl);
+  });
+  $(imgSwap).preload();
+});
+$.fn.preload = function() {
+    this.each(function(){
+        $('<img/>')[0].src = this;
   
-    $(function() {
-      $("ul.demo2").ytplaylist({addThumbs:true, autoPlay: false, holderId: 'ytvideo2'});
     });
-  
+}
 </script>
 
   <script src="../../js/script.js"></script>
