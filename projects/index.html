@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>About Little Tinker</title>
+  <title>Little Tinker Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="We scale meaningful experiences.">
     <meta name="author" content="Christopher Azar for Little Tinker">
@@ -52,61 +52,51 @@
     <div class="container-fluid">
     <div class="row-fluid">
     <div class="span12 intro project-images">
-
-  <div id="container" class="transitions-enabled centered clearfix">
-  
- <div class="box col4">
-<h1>Projects</h1>
     <p>we make sweet shit.</p>
-    <p>Any questions? Of course not.</p>
+    <p>Any questions? Of course not.</p> 
+  <div id="container" class="transitions-enabled centered clearfix">
 
-
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
-    <p>Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula  </p>
-    <p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus.</p>
+ <div class="box col4"> <a href="#"><img src="thumbs/390x260.png" title="cat" alt="cat" /></a>
+  <p>Cats are cool.</p>
   </div>
 
   <div class="box col2">
-    <p>Ut condimentum mi vel tellus. Suspendisse laoreet. Fusce ut est sed dolor gravida convallis. Morbi vitae ante. Vivamus ultrices luctus nunc. Suspendisse et dolor. Etiam dignissim. Proin malesuada adipiscing lacus. Donec metus. Curabitur gravida.</p>
-    <p>Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+    <a href="#"><img src="thumbs/cat.png" title="cat" alt="cat" /></a>
+  <p>Like, wicked cool.</p>
   </div>
 
   <div class="box col2">
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+    <a href="#"><img src="thumbs/cat.png" title="cat" alt="cat" /></a>
+  <p>Like, wicked cool.</p>
+  </div>
+
+ <div class="box col4"> <a href="#"><img src="thumbs/390x260.png" title="cat" alt="cat" /></a>
+  <p>Cats are cool.</p>
   </div>
 
   <div class="box col4">
-    <p>Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.</p>
-  </div>
-  
-  <div class="box col4">
-    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+    <a href="#"><img src="thumbs/390x260.png" title="cat" alt="cat" /></a>
     <p>Vestibulum volutpat, lacus a ultrices sagittis,</p>
-    <ul>
-      <li>Lacus a ultrices sagittis</li>
-      <li>Democratis</li>
-      <li>Plummus</li>
-    </ul>
   </div>
 
   <div class="box col2">
-    <p>Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula  </p>
+    <a href="#"><img src="thumbs/cat.png" title="cat" alt="cat" /></a>
+  <p>Like, wicked cool.</p>
   </div>
 
   <div class="box col2">
-    <p>Sit amet mi ullamcorper vehicula</p>
+    <a href="#"><img src="thumbs/cat.png" title="cat" alt="cat" /></a>
+  <p>Like, wicked cool.</p>
   </div>
 
   <div class="box col2">
-    <h2>Morbi purus libero</h2>
+    <a href="#"><img src="thumbs/cat.png" title="cat" alt="cat" /></a>
+  <p>Like, wicked cool.</p>
   </div>
 
   <div class="box col2">
-    <p>Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
-  </div>
-
-  <div class="box col2">
-    <p>Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula</p>
+    <a href="#"><img src="thumbs/cat.png" title="cat" alt="cat" /></a>
+  <p>Like, wicked cool.</p>
   </div>
 
 </div> <!-- #container -->
@@ -136,16 +126,18 @@
     <script src="../js/plugins.js"></script>
     <script src="../js/jquery.masonry.min.js"></script>
 <script>
-  $(function(){
-    
-    $('#container').masonry({
-      itemSelector: '.box',
-      columnWidth: 200,
-      isAnimated: !Modernizr.csstransitions,
-      isFitWidth: true
-    });
-    
+var $container = $('#container');
+
+$container.imagesLoaded( function(){
+  $container.masonry({
+    itemSelector : '.box',
+    columnWidth: 200,
+    isAnimated: !Modernizr.csstransitions,
+    isFitWidth: true
   });
+});
+
+
 </script>
 <!-- Analytics for LittleTinker.co -->
     <script>

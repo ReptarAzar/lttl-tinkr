@@ -118,7 +118,7 @@ button {
 
 .box {
   margin: 5px;
-  padding: 5px;
+  padding: 0;
   background: #f6f6f6;
   font-size: 11px;
   line-height: 1.4em;
@@ -147,17 +147,36 @@ button {
 
 
 
-.col1 { width: 80px; }
-.col2 { width: 180px; }
-.col3 { width: 280px; }
-.col4 { width: 380px; }
-.col5 { width: 480px; }
+.col1 { width: 90px; }
+.col2 { width: 190px; }
+.col3 { width: 290px; }
+.col4 { width: 390px; }
+.col5 { width: 490px; }
 
-.col1 img { max-width: 80px; }
-.col2 img { max-width: 180px; }
-.col3 img { max-width: 280px; }
-.col4 img { max-width: 380px; }
-.col5 img { max-width: 480px; }
+.col1 img { max-width: 90px; }
+.col2 img { max-width: 190px; }
+.col3 img { max-width: 290px; }
+.col4 img { max-width: 390px; }
+.col5 img { max-width: 490px; }
+
+
+.box .col4 img {
+  width:390;
+  height:260;
+}
+
+.box .col2 img {
+  width:190;
+  height:126;  
+}
+
+.box img:hover {
+  opacity: .9;
+}
+
+.box p {
+  padding: 10px 10px 5px;
+}
 
 /**** Gutters ****/
 
@@ -202,6 +221,5 @@ button {
        -o-transition-property: none;
           transition-property: none;
 }
-
 
 
