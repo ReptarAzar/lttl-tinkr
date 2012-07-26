@@ -81,6 +81,17 @@
 .hero-head h3 {
 width:100%;
 }
+ #ytvideo,
+#ytvideo2 {
+  float: left;
+  margin-right:10px;
+  width:100%;
+  height: 270px;
+  overflow:hidden;
+  position: relative;
+  text-align: center;
+  background-color: #f6f6f6;
+}
 
 }
 @media (min-width: 768px) and (max-width: 979px) {
@@ -98,6 +109,17 @@ width:100%;
   }
 }
 @media (max-width: 480px) {
+ #ytvideo,
+#ytvideo2 {
+  float: left;
+  margin-right:10px;
+  width:100%;
+  height: 170px;
+  overflow:hidden;
+  position: relative;
+  text-align: center;
+  background-color: #f6f6f6;
+}
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }
@@ -155,6 +177,9 @@ width:100%;
 
 }
 @media (max-width: 775px) {
+ 
+
+
   body {
     padding-left: 20px;
     padding-right: 20px;
@@ -229,6 +254,8 @@ p.subhead {
 
 }
 @media (min-width: 768px) and (max-width: 979px) {
+  
+
   .row {
     margin-left: -20px;
     *zoom: 1;
@@ -730,10 +757,6 @@ p.subhead {
   .thumbnails > li {
     margin-left: 30px;
   }
-}
-
-.brand-phone {
-  ;
 }
 
 
