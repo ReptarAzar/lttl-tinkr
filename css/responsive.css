@@ -121,10 +121,10 @@ width:100%;
   background-color: #f6f6f6;
 }
 
-.navbar-inner .visible-phone {
+/*.navbar-inner .visible-phone {
   width: 80%;
   clear:none;
-}
+}*/
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }

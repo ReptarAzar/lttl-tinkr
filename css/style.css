@@ -349,67 +349,6 @@ a.btn img {
   cursor:pointer;
 
 }
-/*img.main-img {
-  width:100%;
-  max-height:400px;
-  overflow-x:hidden;
-}
-
-ul {
-  list-style:none;
-}
-.gallery ul {
-  padding-right: 10px;
-  margin-top:30px;
-}
-.gallery li {
-  display: inline; 
-  margin-right: 3px;
-}
-.gallery li img {
-  padding: 5px;
-  background: #BBB;
-  width: 10%;
-  min-width:100px;
-  max-width:120px; 
-  margin: 0 2% 2% 0;
-  height:80px;
-  -moz-transition-property: color;
-  -moz-transition-duration: .1s;
-  -webkit-transition-property: color;
-  -webkit-transition-duration: .1s;
-  -o-transition-property: color;
-  -o-transition-duration: .1s;
-  -ms-transition-property: color;
-  -ms-transition-duration: .1s;
-  transition-property: color;
-  transition-duration: .1s;
-}
-.gallery li img:hover {
-  padding: 5px;
-  background: #848484;
-  cursor: pointer;
-}
-
-.a-thumb {
-  padding: 0 !important;
-  border: 5px solid #faf04f;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-}
-
-.active-thumb img{
-  padding: 0 !important;
-  border: 5px solid #faf04f;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-}
-.active-thumb img:hover {
-  padding: 0;
-  border: 5px solid #faf04f;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-}*/
 
 #ytvideo,
 #ytvideo2 {

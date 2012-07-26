@@ -119,7 +119,7 @@ button {
 .box {
   margin: 5px;
   padding: 0;
-  background: #f6f6f6;
+  /*background: rgba(255, 255, 255, 0.75);*/
   font-size: 11px;
   line-height: 1.4em;
   float: left;
@@ -131,6 +131,9 @@ button {
 .box h2 {
   font-size: 14px;
   font-weight: 200;
+}
+.box p {
+  border-top: 2px solid #eee;
 }
 
 .box img,
@@ -159,6 +162,14 @@ button {
 .col4 img { max-width: 390px; }
 .col5 img { max-width: 490px; }
 
+.col2 {
+  background: rgba(255, 255, 255, 0.6);  
+}
+
+
+.col4 {
+  background: rgba(255, 255, 255, 0.8);  
+}
 
 .box .col4 img {
   width:390;
@@ -171,7 +182,7 @@ button {
 }
 
 .box img:hover {
-  opacity: .9;
+  opacity: .75;
 }
 
 .box p {
