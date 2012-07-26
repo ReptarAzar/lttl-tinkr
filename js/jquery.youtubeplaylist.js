@@ -15,9 +15,9 @@ jQuery.fn.ytplaylist = function(options) {
 	// default settings
 	var options = jQuery.extend({
 		holderId: 'ytvideo',
-		playerHeight: 300,
-		playerWidth: 450,
-		addThumbs: false,
+		playerHeight: '100%',
+		playerWidth: '100%',
+		addThumbs: true,
 		thumbSize: 'small',
 		showInline: false,
 		autoPlay: true,
@@ -122,7 +122,8 @@ jQuery.fn.ytplaylist = function(options) {
 						display: 'none',
 						position: 'absolute',
 						left: '0px',
-						top: '50%'});
+						top: '50%'
+					});
 
 				if(options.showInline) {
 					jQuery("li.currentvideo").removeClass("currentvideo");
@@ -153,7 +154,7 @@ jQuery.fn.ytplaylist = function(options) {
 				
 					$img.fadeIn();
 				
-				}, 100);
+				}, 200);
 
 
 			return false;
