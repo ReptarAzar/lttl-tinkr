@@ -203,6 +203,10 @@ button {
  opacity:.8; 
 } 
 
+div#container.masonry {
+  min-width:390px !important;
+}
+
 /**** Gutters ****/
 
 .has-gutters .box {
