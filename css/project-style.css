@@ -171,6 +171,12 @@ button {
   background: rgba(255, 255, 255, 0.8);  
 }
 
+.box:hover {
+  background: rgba(255, 255, 255, 0.95);
+  cursor: pointer;  
+}
+
+
 .box .col4 img {
   width:390;
   height:260;
@@ -182,7 +188,7 @@ button {
 }
 
 .box img:hover {
-  opacity: .75;
+  opacity: .95;
 }
 
 .box p {
@@ -191,7 +197,11 @@ button {
 .box i {
   float:right;
   margin-top:3px;
+  opacity:.5;
 }
+.box i:hover {
+ opacity:.8; 
+} 
 
 /**** Gutters ****/
 
