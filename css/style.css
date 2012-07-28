@@ -461,7 +461,7 @@ a.tip img {
 }
 
 form {
-  font-family: 'TisaOT', sans-serif;
+  font-family: 'TisaOT', sans-serif ;
 }
 
 a.tip.twit:hover span { margin: -11px -10px -10px 90px; }
@@ -474,13 +474,13 @@ a.tip.email:hover span { margin: -11px -10px -10px 30px; }
 start at opacity zero until the document is ready
  - by becker
  */
-.docuready {
+/*.docuready {
   position:relative;
   top:-20px;
   opacity: 0;
   -moz-opacity: 0;
   filter:alpha(opacity=0);
-}
+}*/
 
 
 /*Type Replacement
