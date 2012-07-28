@@ -460,6 +460,10 @@ a.tip img {
   margin-right: 5px;
 }
 
+form {
+  font-family: 'TisaOT', sans-serif;
+}
+
 a.tip.twit:hover span { margin: -11px -10px -10px 90px; }
 a.tip.fsq:hover span { margin: -11px -10px -10px 70px; }
 a.tip.fb:hover span { margin: -11px -10px -10px 50px; }
