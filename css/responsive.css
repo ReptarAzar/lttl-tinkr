@@ -180,6 +180,13 @@ ul.nav.nav-tabs.nav-stacked.span4 {
   padding-left: 0;
 }
 
+.brand img {
+  top: 15px;
+  position: relative;
+  float: left;
+  width:150px;
+}
+
 }
 @media (max-width: 775px) {
  
@@ -788,8 +795,6 @@ margin: 20px 0 0 0;
   }
 }
 
-
-/* That bloody top image... */
 
 @media (max-width: 800px) {
 
