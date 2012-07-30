@@ -476,7 +476,7 @@ z-index: 100;
 }
 
 div.haha p{
-  font:  1.15em/1.25em 'Comic Sans', Comic Sans, Comic Sans MS, 'TisaOT', sans-serif;
+  font-family: 'Comic Sans', Comic Sans, Comic Sans MS, 'TisaOT', sans-serif;
 }
   
 
