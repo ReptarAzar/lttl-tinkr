@@ -480,7 +480,6 @@ a.tip.email:hover span { margin: -11px -10px -10px 30px; }
   display: none;
 }
 #about-subnav{
-  max-width: 350px;
   width: 20%;
 position: fixed;
 right: 8%;
