@@ -343,7 +343,7 @@ a:hover {
 	width: 40.425531911%;
 }
 .row-fluid > .span4 {
-	width: 30.914893614%;
+	width: 28%;
 }
 .row-fluid > .span3 {
 	width: 22.404255317%;
@@ -380,10 +380,10 @@ a:hover {
 	clear: both;
 }
 p {
-	margin: 0 0 9px;
-	font-family:'TisaOT', "Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 13px;
-	line-height: 18px;
+	margin: 5px 0 10px;
+	font-family: 'TisaOT', "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 22px;
 }
 p small {
 	font-size: 11px;
@@ -2488,7 +2488,7 @@ input[type="submit"].btn.btn-mini {*padding-top:1px;*padding-bottom:1px;
 }
 .nav > li > a:hover {
 	text-decoration: none;
-	background-color: #eeeeee;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 .nav .nav-header {
 	display: block;
@@ -2578,7 +2578,8 @@ input[type="submit"].btn.btn-mini {*padding-top:1px;*padding-bottom:1px;
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
 	color: #555555;
-	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.85);
+	font-family: 'TisaOT-Bold';
 	border: 1px solid #ddd;
 	border-bottom-color: transparent;
 	cursor: default;
