@@ -268,7 +268,11 @@ margin: 20px 0 0 0;
 .row-fluid > .span8 {
   width: 100%;
 }
-
+.nav-stacked li {
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 3%;
+}
 
 }
 @media (min-width: 768px) and (max-width: 979px) {
