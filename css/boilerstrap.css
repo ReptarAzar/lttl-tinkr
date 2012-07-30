@@ -2583,7 +2583,7 @@ input[type="submit"].btn.btn-mini {*padding-top:1px;*padding-bottom:1px;
 	border-bottom-color: transparent;
 	cursor: pointer;
 }
-.nav-tabs > li:hover {
+.nav-tabs li:hover {
 	cursor: pointer;	
 }
 .nav-pills > li > a {
