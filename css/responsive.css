@@ -264,8 +264,9 @@ text-align: center;
 #switcher-panel {
   position: relative;
 margin: 20px 0 0 0;
-height: auto !important;
-min-height: none !important;
+}
+.row-fluid > .span8 {
+  width: 100%;
 }
 
 
