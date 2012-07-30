@@ -9,13 +9,17 @@ $("#logo").hover(
 
 /* jQuery Content Panel Switcher JS - v1.1 */
 var jcps = {};
+var currentContent = "about";
 jcps.fader = function(speed, target, panel) {
 	jcps.show(target, panel);
     if (panel == null) {panel = ''};
 	$('.switcher' + panel).click(function() {
 		var _contentId = '#' + $(this).attr('id') + '-content';
 		var _content = $(_contentId).html();
-		var active = $(this).attr('class') + '.active';
+		$(this).parent().addClass('active');
+		$('#' + currentContent).parent().removeClass('active');
+		currentContent = $(this).attr('id');
+		console.log($(this));
 		if (speed == 0) {
 			$(target).html(_content);
 		}
