@@ -471,8 +471,21 @@ a.tip.email:hover span { margin: -11px -10px -10px 30px; }
 
 /* About Page Styles */
 
+#switcher-panel {
+  min-height: 220px;
+  margin-bottom:30px; 
+}
+
 .switcher-content {
   display: none;
+}
+#about-subnav{
+  max-width: 350px;
+  width: 20%;
+position: fixed;
+right: 8%;
+z-index: 100;
+
 }
 
 div.haha p{

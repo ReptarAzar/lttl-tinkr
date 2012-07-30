@@ -183,9 +183,6 @@ ul.nav.nav-tabs.nav-stacked.span4 {
 }
 @media (max-width: 775px) {
  
-ul.nav.nav-tabs.nav-stacked.span4.pull-right#about-subnav {
-  float:left;
-}
 
 
   body {
@@ -257,6 +254,18 @@ p.subhead {
 	opacity: 1;
 	max-width:300px;
 	margin:10px 0;
+}
+#about-subnav{
+width: auto;
+float: none;
+text-align: center;
+ position: relative;
+}
+#switcher-panel {
+  position: relative;
+margin: 20px 0 0 0;
+height: auto !important;
+min-height: none !important;
 }
 
 
