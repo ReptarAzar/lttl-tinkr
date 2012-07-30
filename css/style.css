@@ -476,8 +476,7 @@ a.tip.email:hover span { margin: -11px -10px -10px 30px; }
 }
 
 div.haha p{
-  font-family: Comic Sans, Comic Sans MS, cursive;
-  font:  1.25em/1.5em Comic Sans, Comic Sans MS, cursive;
+  font:  1.25em/1.5em 'Comic Sans', Comic Sans, Comic Sans MS, sans-serif;
 }
   
 
