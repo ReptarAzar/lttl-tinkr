@@ -72,12 +72,12 @@ function tumblr(resp) {
           <a class="brand" id="logo" href="http://littletinker.co" id="logo"><img src="../img/logotype.png" width="248" height="40" alt="Little Tinker" title="Take me home tonight."><img class="hardhat" src="../img/hardhat-icon-10.png" alt="Little Tinker" title="Take me home tonight."></a>
           <div class="nav-collapse">
               <ul class="nav pull-right">
-                <li id="projects-link"><a href="#sweet-shit">projects</a></li>
+                <li><a href="../projects/">projects</a></li>
                 <li><a href="about/">about</a></li>
                 <li><a href="http://makesweetshit.com">blog</a></li>
-                <li><a href="mailto:info@littletinker.co" target="_blank" title="Email us!">contact</a></li>
+                <li><a data-toggle="modal" href="#contact" title="Email us!">contact</a></li>
               </ul>
-           <!-- <p class="navbar-text pull-right">Follow <a href="http://twitter.com/LittleTinkerCo" target="_blank">@LittleTinkerCo</a></p>-->
+           
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -210,6 +210,37 @@ or if you are working on the master..
 
 
     </div><!--/.fluid-container-->
+<!-- Begin Form -->
+<div class="modal hide fade" id="contact">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>What's up?</h3>
+  </div>
+  <div class="modal-body">
+      <form id="emf-form" enctype="multipart/form-data" method="post" action="###" name="emf-form">
+              <input class="dark" onfocus="this.value=''" id="element_0" name="element_0" value="Name" size="80" class="validate[required]" type="text" />
+              <input class="dark" onfocus="this.value=''" id="element_1" name="element_1" value="Email" size="80" class="validate[required]" type="text" />
+              <textarea class="dark" onfocus="this.value=''" id="element_2" name="element_2" cols="80" rows="6" class="validate[required]">Message</textarea>
+              <input name="element_counts" value="3" type="hidden" /> 
+          <input name="embed" value="forms" type="hidden" />
+
+          <p> 235 Harrison Street Syracuse, NY 13210  <span class="pull-right"> (415) 484-6537 &nbsp;</span></p> 
+          </div>
+          <div class="modal-footer">
+          <a href="http://twitter.com/littletinkerco" target="_blank" class="tip twit pull-left"><img src="img/ico/twitter-2.png" width="16" height="16" alt="Twitter"><span>Twitter</span></a>
+
+          <a href="https://foursquare.com/littletinkerco" target="_blank" class="tip fsq pull-left"><img src="img/ico/4sq.png" width="16" height="16" alt="4sq"><span>Foursquare</span></a>
+
+          <a href="https://www.facebook.com/LittleTinkerCo" target="_blank" class="tip fb pull-left"><img src="img/ico/facebook.png" width="16" height="16" alt="Facebook"><span>Facebook</span></a>
+
+          <a href="mailto:info@littletinker.co" target="_blank" class="tip email pull-left"><img src="img/ico/email.png" width="16" height="16" alt="Email"><span>info@littletinker.co</span></a>
+
+          <input  type="reset" value="Oops" class="reset btn" />
+          <input  type="submit" value="Send" class="submit btn btn-inverse" />
+      </form>  
+  </div>
+</div>  
+<!-- End Form -->  
 
     <!-- Le javascript
     ================================================== -->
